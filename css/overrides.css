@@ -32,3 +32,10 @@ CSS karousel kode lånt fra Bootstrap's eksempelkode og modificeret til vores br
     padding: 5px;
 
   }
+
+
+.transparent {
+
+  background-color: rgba(35,35,35,0.7);
+
+}

@@ -18,7 +18,7 @@
     <!-- Bootstraps gridsystem kører på 12 kolonner. Ved at lave en tom trekolonners div skubber jeg den ud i midten, da den reele er 6 lang. -->
 
     <div class="col-3"></div>
-<div class="jumbotron col-6 ">
+<div class="jumbotron col-6">
     <div class="container container-fluid">
         
     <!-- Form magi - nemmere forklaret sammen -->
