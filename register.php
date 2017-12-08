@@ -64,19 +64,19 @@
                 <input type="password" id="inputPasswordConfirm" class="form-control" name="repeatPassword" placeholder="Gentag Password" required>
             </div>
             <div class="form-row">
-            <div class="form-group col-md-6">
-                <label for="birthdate">Fødselsdato</label>
-                <input type="date" id="birthdate" class="form-control" name="birthDate" placeholder="Fødselsdato" required>
+                <div class="form-group col-md-6">
+                    <label for="birthdate">Fødselsdato</label>
+                    <input type="date" id="birthdate" class="form-control" name="birthDate" placeholder="Fødselsdato" required>
+                </div>
+                
+                <div class="form-group col-md-6">
+                    <label for="gender">Køn</label>
+                    <select id="gender" class="form-control" name="gender" placeholder="Køn" required>
+                        <option value="female">Kvinde</option>
+                        <option value="male">Mand</option>
+                    </select>
+                </div>
             </div>
-            
-            <div class="form-group col-md-6">
-                <label for="gender">Køn</label>
-                <select id="gender" class="form-control" type="gender" name="gender" placeholder="Køn" required>
-                    <option value="female">Kvinde</option>
-                    <option value="male">Mand</option>
-                </select>
-            </div>
-</div>
             <div class="checkbox">
             <label class="custom-control custom-checkbox">
                 <input type="checkbox" value="read-tos" class="custom-control-input" required> 

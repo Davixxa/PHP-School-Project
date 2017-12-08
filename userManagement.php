@@ -21,7 +21,14 @@
         $password = $_POST["password"];
         $email = $_POST["email"];
         $birthdate = $_POST["birthDate"];
-        $gender = $_POST["gender"];
+        $gender_raw = $_POST["gender"];
+        $gender = "";
+
+        if ($gender_raw == "male") {
+            $gender = 0;
+        } else if ($gender_raw = "female") {
+            $gender = 1;
+        }
 
         $queryUserTaken =  "SELECT * FROM users WHERE Username = '" . $username . "'";
         $resultUserTaken = $conn->query($queryUserTaken);
