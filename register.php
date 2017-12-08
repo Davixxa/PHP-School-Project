@@ -71,7 +71,7 @@
             </div>
         </form>
 
-        <!-- Divider, samt tilbage knap (som bruger JavaScript til at gå en side tilbage) og registrer knap -->
+        <!-- Divider, samt tilbage til start og login-side knap -->
         <hr class="featurette-divider" /> 
         <a href="index.php"> <-Tilbage til start</a>
         <a href="login.php" class="float-right">Har du allerede en bruger? Log ind!</a>
@@ -79,6 +79,7 @@
         </div>
 </div>
 
+<!--Kommentar, som skaber en sidste bootstrap kolonne, for at bruge alle Bootstraps 12 kolonner-->
 <div class="col-3"></div>
 </div>
 

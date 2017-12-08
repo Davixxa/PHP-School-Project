@@ -52,6 +52,7 @@
         </div>
 </div>
 
+<!--Kommentar, som skaber en sidste bootstrap kolonne, for at bruge alle Bootstraps 12 kolonner-->
 <div class="col-3"></div>
 </div>
 
