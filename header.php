@@ -1,5 +1,6 @@
 
     <?php require("imports/header.php");
+          require_once("userManagement.php");
     ?>
 
     <!-- Ændring i kode, så bootstrap import sker i en anden fil, hvis jeg gerne vil have bootstrap uden header  -->
@@ -75,3 +76,5 @@
     </div>
 
 </header>
+
+</body>
