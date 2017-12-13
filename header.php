@@ -1,6 +1,7 @@
 
     <?php require("imports/header.php");
           require_once("userManagement.php");
+          session_start();
     ?>
 
     <!-- Ændring i kode, så bootstrap import sker i en anden fil, hvis jeg gerne vil have bootstrap uden header  -->
@@ -30,7 +31,11 @@
             <li class="nav-item">
                 <a href="index.php" class="nav-link">Hjem</a>
             </li>
-            <li class="nav-item"><a href="order.php" class="nav-link">Bestil tid</a></li>
+            <?php if (isset($_SESSION['token'])) {
+                echo '
+            <li class="nav-item"><a href="order.php" class="nav-link">Bestil tid</a></li>';
+            }
+            ?>
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="navbarDropdown">Om os</a>
                 <div class="dropdown-menu" aria-labelledby="navbarDrodown">
@@ -46,9 +51,19 @@
         <!-- Seperat, spaghetti-agtig float-right til registrer og login.-->
 
         <ul class="navbar-nav">
-            <li class="nav-item float-right">
-                <a href="login.php" class="nav-link">Register/Login</a>
-            </li>
+            <?php if (isset($_SESSION['token'])) {
+                echo "
+                <li class='nav-item float-right dropdown'>
+                    <a href='#' class='nav-link dropdown-toggle' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' id='loggedInDropdown'>Velkommen " . $_SESSION['username'] . "</a>
+                    <div class='dropdown-menu dropdown-menu-right' aria-labelledby='loggedInDropdown'>
+                        <a href='userManagement.php?def=logout' class='dropdown-item'>Log ud</a>
+                    </div>
+                </li>";
+            } else {
+            echo "<li class='nav-item float-right'>
+                <a href='login.php' class='nav-link'>Register/Login</a>
+            </li>"; }
+            ?>
         </ul>
 
         </div>

@@ -36,6 +36,7 @@
 
         <form class="form-signin" method="POST" action="userManagement.php?def=register">
             <h2 class="form-signin-heading">Registrer</h2>
+            <p>Bemærk at der ikke understøttes æ/ø/å i databasen. Brug istedet ae/oe/aa. Dette gælder også for store bogstaver.</p> 
             <div class="form-row">
                 <div class="form-group col-md-6">
                     <label for="inputFirstName">Fornavn</label>
