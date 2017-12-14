@@ -1,4 +1,4 @@
-<title>TemaSpa | Bestil tid </title>
+<title>TemaSpa | Bestil tid - Vælg produkt </title>
 
 <?php require("header.php"); ?>
 <link rel="stylesheet" href="css/overrides.css">
@@ -12,7 +12,7 @@
     <h2 class="display-3">1. Vælg produkt</h2>
 
 
-        <form method="GET" action="order-date.php">
+        <form method="POST" action="order-date.php">
             <div class="form-group">
                 <select class="form-control form-control-lg" id="inputProduct" name="product">
                     <option value="0">Boble</option>

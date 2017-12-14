@@ -16,7 +16,7 @@
     -->
     <header>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a href="#" class="navbar-brand" id="">TemaSpa</a>
+        <a href="#" class="navbar-brand">TemaSpa</a>
 
         <!-- Laver knappen til udfoldning af menu på mobile enheder -->
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -38,7 +38,7 @@
             ?>
             <li class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="navbarDropdown">Om os</a>
-                <div class="dropdown-menu" aria-labelledby="navbarDrodown">
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                     <a href="about.php" class="dropdown-item">Information</a>
                     <a href="about.php#WhoAreWe" class="dropdown-item">Hvem er vi?</a>
                     <a href="about.php#OurVision" class="dropdown-item">Vores vision</a>

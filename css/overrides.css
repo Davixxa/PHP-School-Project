@@ -1,4 +1,4 @@
-/*
+</*
 
 CSS karousel kode lånt fra Bootstrap's eksempelkode og modificeret til vores brug. 
 
@@ -38,4 +38,16 @@ CSS karousel kode lånt fra Bootstrap's eksempelkode og modificeret til vores br
 
   background-color: rgba(35,35,35,0.7);
 
+}
+
+.padfix {
+
+  margin-bottom: 5px;
+
+}
+
+.compliant-center {
+  text-align: center; 
+  margin-left: auto; 
+  margin-right: auto;
 }

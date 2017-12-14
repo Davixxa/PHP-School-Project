@@ -70,9 +70,9 @@
 
 <!-- Container m/ Cards for sidste/nuværende/næste tema -->
 
-<div class="container">
+<div class="container" align="center">
     <div class="row">
-        <div class="col-4">
+        <div class="col-lg-4 padfix">
             <div class="card" style="width: 20rem; height: 590px;">
                 <img style="height: 250px;" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="" class="card-img-top">
                 <div class="card-block bs-card-padding">
@@ -82,7 +82,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-lg-4 padfix">
         <div class="card" style="width: 20rem; height: 590px;">
                 <img style="height: 250px;" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="" class="card-img-top">
                 <div class="card-block bs-card-padding">
@@ -92,7 +92,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-lg-4 padfix">
         <div class="card" style="width: 20rem; height: 590px;">
                 <img style="height: 250px;" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="" class="card-img-top">
                 <div class="card-block bs-card-padding">
