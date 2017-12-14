@@ -37,7 +37,16 @@
                     $_SESSION["username"] = $row->Username;
                     $_SESSION["fullname"] = $row->FirstName . " " . $row->LastName;
 
-                    $newTokenQuery = "UPDATE users SET token='" . $updatedToken . "' WHERE ID='" . $row->ID . "'";
+                    echo $row->ID;
+
+                    $newTokenQuery = "UPDATE users SET token='" . $updatedToken . "' WHERE ID=" . $row->ID . "";
+
+
+                    if ($conn->query($newTokenQuery) == true) {
+                        echo 'Login success';
+                    } else {
+                        echo 'Login failed';
+                    }
 
                     $conn->close();
 
@@ -85,9 +94,9 @@
             if ($resultEmailTaken->num_rows == 0) {
                  $token = openssl_random_pseudo_bytes(50); // Generer et crypto-sikkert pseudo-tilfældigt tal til brug som token
                  $queryRegister = "INSERT INTO users 
-                 (FirstName, LastName, Username, Password, Email, BirthDate, Gender, token) 
+                 (FirstName, LastName, Username, Password, Email, BirthDate, Gender, token, isAdmin) 
                  VALUES
-                 ('" . $firstName . "', '" . $lastName . "', '" . $username . "', '" . $password . "', '" . $email . "', '" . $birthdate . "', '" . $gender . "', '" . $token . "')";
+                 ('" . $firstName . "', '" . $lastName . "', '" . $username . "', '" . $password . "', '" . $email . "', '" . $birthdate . "', '" . $gender . "', '" . $token . "', 0)";
 
                  if ($conn->query($queryRegister) == true) {
                      echo 'User created';
