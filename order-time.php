@@ -1,6 +1,6 @@
-<title>TemaSpa | Bestil tid - Vælg tid</title>
-
-<?php require("header.php");
+<?php
+    $pagetitle = "TemaSpa | Bestil tid - Vælg tid";
+     require("header.php");
       require("config.php");
 
     if (isset($_POST["product"])) {
@@ -63,14 +63,14 @@
         <form method="POST" action="order-comment.php">
                 <div class="form-group col-md-3" style="display: none;"> <!--Lav en skjult select. Dette sørger for at vores information om select kommer med fra sidste side.-->
                     <label for="product">Produkt</label>
-                    <select id="product" class="form-control" name="product" placeholder="Produkt">
+                    <select id="product" class="form-control" name="product">
                         <option value='<?php echo $_POST["product"]; ?>'><?php echo $productString; ?></option>
                     </select>
                 </div>
 
                 <div class="form-group col-md-3" style="display: none;">
                     <label for="orderdate">Dato</label>
-                    <input type="date" id="orderdate" class="form-control" name="date" value="<?php echo $_POST["date"]; ?>" placeholder="Dato">
+                    <input type="date" id="orderdate" class="form-control" name="date" value="<?php echo $_POST["date"]; ?>">
                 </div>
 
                 <div class="form-group">

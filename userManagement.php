@@ -36,6 +36,7 @@
                     $_SESSION["token"] = $updatedToken;
                     $_SESSION["username"] = $row->Username;
                     $_SESSION["fullname"] = $row->FirstName . " " . $row->LastName;
+                    $_SESSION["isAdmin"] = $row->isAdmin;
 
                     echo $row->ID;
 

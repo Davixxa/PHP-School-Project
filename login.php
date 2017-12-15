@@ -1,8 +1,7 @@
 <!-- Import af Header samt titelsætning -->
 
-<title>TemaSpa | Log ind </title>
-
-<?php require("header.php");
+<?php $pagetitle = "TemaSpa | Log ind";
+ require("header.php");
 ?>
 
 

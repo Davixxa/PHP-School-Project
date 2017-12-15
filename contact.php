@@ -1,4 +1,5 @@
-<?php require("header.php");
+<?php $pagetitle = "TemaSpa | Kontakt os";
+ require("header.php");
 ?>
 
 

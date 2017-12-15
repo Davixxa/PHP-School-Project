@@ -1,15 +1,17 @@
 <!--- Import af HTML hoved og Bootstrap CSS -->
-<?php require("header.php");
+<?php
+$pagetitle = "TemaSpa |  Hjem";
+require("header.php");
+
 ?>
 
 <!-- Sæt titel -->
-<title>TemaSpa | Home </title>
 
 <!-- Loading af overrides -->
 <link rel="stylesheet" href="css/overrides.css">
 
 
-<main role="main">
+<main>
 <!-- Begyndelse på carousel -->
 
 
@@ -22,6 +24,7 @@
         <li data-target="carouselAppetizerIndicators" data-slide-to="1"></li>
         <li data-target="carouselAppetizerIndicators" data-slide-to="2"></li>
     </ol>
+    
 
     <!-- Carousel Inhold -->
     <div class="carousel-inner">
@@ -63,6 +66,9 @@
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
     </a>
 </div>
+</div>
+
+<br /><br />
 
 
 
@@ -70,8 +76,8 @@
 
 <!-- Container m/ Cards for sidste/nuværende/næste tema -->
 
-<div class="container" align="center">
-    <div class="row">
+<div class="container compliant-center">
+    <div class="row" style="justify-content: space-between;">
         <div class="col-lg-4 padfix">
             <div class="card" style="width: 20rem; height: 590px;">
                 <img style="height: 250px;" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="" class="card-img-top">

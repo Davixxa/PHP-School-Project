@@ -1,9 +1,11 @@
-<title>TemaSpa | Bestil tid - Vælg produkt </title>
 
-<?php require("header.php"); ?>
-<link rel="stylesheet" href="css/overrides.css">
+<?php  $pagetitle = "TemaSpa | Bestil tid - Vælg produkt";
+require("header.php"); ?>
+<link rel="stylesheet" href="css/overrides.css" />
+
+
+
 <br><br>
-
 <div class="container">
     <div class="jumbotron">
     <div class="progress" style="height: 20px;">
@@ -15,7 +17,7 @@
         <form method="POST" action="order-date.php">
             <div class="form-group">
                 <select class="form-control form-control-lg" id="inputProduct" name="product">
-                    <option value="0">Boble</option>
+                    <option value="0">Spa</option>
                     <option value="1">Manikure</option>
                     <option value="2">Damp</option>
                     <option value="3">Massage</option>

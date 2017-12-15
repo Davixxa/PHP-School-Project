@@ -2,18 +2,12 @@
 
 
 
-<?php require("header.php");
+<?php
+$pagetitle = "TemaSpa | Registrer"; 
+require("header.php");
+
 ?>
 
-
-
-<head>
-<script src="js/passCheck.js"></script>
-<title>TemaSpa | Log ind </title>
-</head> 
-
-
-<body onLoad="javascript:passConfirm();">
 
 
 

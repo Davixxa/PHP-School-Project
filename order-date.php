@@ -1,6 +1,5 @@
-<title>TemaSpa | Bestil tid - Vælg Dato</title>
-
-<?php require("header.php");
+<?php $pagetitle = "TemaSpa | Bestil tid - Vælg Dato";
+require("header.php");
 
     if (isset($_POST["product"])) {
 
@@ -45,7 +44,7 @@
 
         <div class="form-group col-md-3" style="display: none;"> <!--Lav en skjult select. Dette sørger for at vores information om select kommer med fra sidste side.-->
                     <label for="product">Produkt</label>
-                    <select id="product" class="form-control" name="product" placeholder="Produkt">
+                    <select id="product" class="form-control" name="product" >
                         <option value='<?php echo $_POST["product"]; ?>'><?php echo $productString; ?></option>
                     </select>
                 </div>
@@ -60,14 +59,14 @@
             
             <div class="form-group col-md-3">
                     <label for="orderdate">Dato</label>
-                    <input type="date" id="orderdate" class="form-control" name="date" placeholder="Dato" required>
+                    <input type="date" id="orderdate" class="form-control" name="date" required>
                 </div>
             <hr>
             <a href="#" onclick="window.history.back();" class="btn btn-primary btn-lg float-left">Tilbage</a>
             <button class="btn btn-primary btn-lg float-right" type="submit">Næste</button>
         </form>
         <?php } ?>
-    </div>
+    </div> <!-- Validatoren rapporterer disse tags som stray div tags, det er de ikke. -->
 </div>
 
 

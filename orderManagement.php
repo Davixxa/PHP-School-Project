@@ -37,10 +37,10 @@
                 
                 $tokenResult = $conn->query($tokenQuery);
 
+
                 $row = mysqli_fetch_object($tokenResult);
 
                 if ($row->token == $token) {
-                    var_dump($row);
                     $userID = $row->ID;
                     $endTime = $startTime + 1;
                     $queryPlaceOrder = "INSERT INTO orders (UserID, OrderDate, StartTime, EndTime, ProductType, Comment) VALUES

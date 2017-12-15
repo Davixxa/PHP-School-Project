@@ -1,14 +1,20 @@
-
     <?php require("imports/header.php");
           require_once("userManagement.php");
           session_start();
     ?>
+    <title><?php echo $pagetitle; ?></title>
+    <?php if ($pagetitle == "TemaSpa | Registrer") {
+        echo '<script src="js/passCheck.js"></script>';
+    } ?>
 
     <!-- Ændring i kode, så bootstrap import sker i en anden fil, hvis jeg gerne vil have bootstrap uden header  -->
 
 </head>
-<body>
-
+<?php if ($pagetitle == "TemaSpa | Registrer") {
+    echo '<body onLoad="javascript:passConfirm();">';
+} else {
+    echo "<body>";
+} ?>
     <!-- Start af Menubar, som bruger bootstrap css-klasserne navbar, navbar-expand-lg, navbar-dark og bg-dark. 
 
     Inden i den har vi et link med klassen navbar-brand, som ikke fører noget sted hen
@@ -56,8 +62,14 @@
                 <li class='nav-item float-right dropdown'>
                     <a href='#' class='nav-link dropdown-toggle' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false' id='loggedInDropdown'>Velkommen " . $_SESSION['username'] . "</a>
                     <div class='dropdown-menu dropdown-menu-right' aria-labelledby='loggedInDropdown'>
-                        <a href='userManagement.php?def=logout' class='dropdown-item'>Log ud</a>
-                    </div>
+                    <a href='orders.php' class='dropdown-item'>Ordrer</a>";
+                if (isset($_SESSION['isAdmin'])) {
+                    if ($_SESSION['isAdmin'] == 1) {
+                    echo "<a href='ordersAdmin.php' class='dropdown-item'>Admin</a>";
+                    }
+                }
+                   echo "<a href='userManagement.php?def=logout' class='dropdown-item'>Log ud</a> 
+                   </div>
                 </li>";
             } else {
             echo "<li class='nav-item float-right'>
@@ -91,5 +103,3 @@
     </div>
 
 </header>
-
-</body>

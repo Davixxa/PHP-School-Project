@@ -47,7 +47,7 @@ CSS karousel kode lånt fra Bootstrap's eksempelkode og modificeret til vores br
 }
 
 .compliant-center {
-  text-align: center; 
-  margin-left: auto; 
-  margin-right: auto;
+  align-self: center;
+  align-content: center;
+  /*border: 1px solid #000000;*/
 }

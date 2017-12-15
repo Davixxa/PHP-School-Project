@@ -1,10 +1,5 @@
-<!doctype html>
-<head>
-<title>TemaSpa | Bestil Tid - Kommentar</title>
-</head>
-
 <?php
-
+$pagetitle = "TemaSpa | Bestil tid - Kommentar";
 require("config.php");
 require("header.php");
 

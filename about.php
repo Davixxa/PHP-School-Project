@@ -1,7 +1,8 @@
 
-<?php require("header.php");
+<?php $pagetitle = "TemaSpa | Om os";
+ require("header.php");
 ?>
-<title> TemaSpa | Om os</title>
+
 
 <br><br>
 
